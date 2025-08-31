@@ -1,0 +1,122 @@
+[
+  {
+    "function": "AEB System shall measure distance to the obstacle in the direction of the movement of the vehicle.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system does not measure the distance to the obstacle in the direction of the vehicle's movement."
+  },
+  {
+    "function": "AEB System shall measure distance to the obstacle in the direction of the movement of the vehicle.",
+    "keyword": "MORE",
+    "malfunction": "The AEB system overestimates the distance to the obstacle in the direction of movement, reporting a longer distance than actually exists."
+  },
+  {
+    "function": "AEB System shall measure distance to the obstacle in the direction of the movement of the vehicle.",
+    "keyword": "LESS",
+    "malfunction": "The AEB system measures a distance to the obstacle that is less than the actual distance, causing it to believe the obstacle is closer than it really is."
+  },
+  {
+    "function": "AEB System shall measure distance to the obstacle in the direction of the movement of the vehicle.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system does not measure distance to the obstacle in the vehicle's direction of movement."
+  },
+  {
+    "function": "AEB System shall measure distance to the obstacle in the direction of the movement of the vehicle.",
+    "keyword": "AS WELL AS",
+    "malfunction": "The AEB system measures distance to the obstacle in the direction of movement, as well as intermittently applying the brakes without an obstacle present."
+  },
+  {
+    "function": "AEB System shall measure distance to the obstacle in the direction of the movement of the vehicle.",
+    "keyword": "PART OF",
+    "malfunction": "Only part of the distance-to-obstacle measurement function is active, so the system may measure distance only for a subset of directions or ranges and ignore others."
+  },
+  {
+    "function": "AEB System shall receive speed of the car.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system does not receive the car's speed data from the vehicle speed sensor."
+  },
+  {
+    "function": "AEB System shall receive speed of the car.",
+    "keyword": "MORE",
+    "malfunction": "The AEB system receives an inflated speed reading, causing it to brake harder or earlier than warranted."
+  },
+  {
+    "function": "AEB System shall receive speed of the car.",
+    "keyword": "LESS",
+    "malfunction": "The AEB system receives the car speed data at a reduced update rate, resulting in stale or less timely speed information."
+  },
+  {
+    "function": "AEB System shall receive speed of the car.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system does not receive the car's speed."
+  },
+  {
+    "function": "AEB System shall receive speed of the car.",
+    "keyword": "AS WELL AS",
+    "malfunction": "The AEB system receives the car speed, as well as an erroneous extra speed input from a secondary sensor, leading to conflicting data and improper braking."
+  },
+  {
+    "function": "AEB System shall receive speed of the car.",
+    "keyword": "PART OF",
+    "malfunction": "Only a portion of the car's speed data is received by the AEB system, resulting in incomplete speed information."
+  },
+  {
+    "function": "AEB System shall calculate Time To Collision (TTC) based on the distance to an obstacle and the speed.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system fails to calculate TTC based on the distance to an obstacle and the vehicle speed."
+  },
+  {
+    "function": "AEB System shall calculate Time To Collision (TTC) based on the distance to an obstacle and the speed.",
+    "keyword": "MORE",
+    "malfunction": "The AEB system calculates TTC more frequently than intended, causing premature or unnecessary braking based on the distance to the obstacle and relative speed."
+  },
+  {
+    "function": "AEB System shall calculate Time To Collision (TTC) based on the distance to an obstacle and the speed.",
+    "keyword": "LESS",
+    "malfunction": "The AEB system's TTC calculation, based on distance and speed, is performed to a lesser extent, yielding lower TTC estimates and potentially triggering braking earlier than necessary."
+  },
+  {
+    "function": "AEB System shall calculate Time To Collision (TTC) based on the distance to an obstacle and the speed.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system does not calculate Time To Collision (TTC) based on the distance to an obstacle and the vehicle speed."
+  },
+  {
+    "function": "AEB System shall calculate Time To Collision (TTC) based on the distance to an obstacle and the speed.",
+    "keyword": "AS WELL AS",
+    "malfunction": "The AEB system calculates TTC based on the distance to an obstacle and the speed, AS WELL AS erroneously initiating braking for non-existent obstacles."
+  },
+  {
+    "function": "AEB System shall calculate Time To Collision (TTC) based on the distance to an obstacle and the speed.",
+    "keyword": "PART OF",
+    "malfunction": "The AEB system partially computes TTC by using only the distance to the obstacle while neglecting the relative speed, producing an incomplete and potentially misleading TTC."
+  },
+  {
+    "function": "If TTC < 0,5 sec, AEB system shall command full braking.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system does not command full braking when TTC < 0,5 sec."
+  },
+  {
+    "function": "If TTC < 0,5 sec, AEB system shall command full braking.",
+    "keyword": "MORE",
+    "malfunction": "More aggressive braking than intended: the AEB system commands full braking more readily than specified, potentially triggering full braking at less critical TTC values or delivering excessive deceleration."
+  },
+  {
+    "function": "If TTC < 0,5 sec, AEB system shall command full braking.",
+    "keyword": "LESS",
+    "malfunction": "The AEB system issues a braking command when TTC < 0.5 s, but the braking applied is only partial, resulting in insufficient deceleration."
+  },
+  {
+    "function": "If TTC < 0,5 sec, AEB system shall command full braking.",
+    "keyword": "NOT",
+    "malfunction": "The AEB system does not command full braking when TTC is below 0,5 s."
+  },
+  {
+    "function": "If TTC < 0,5 sec, AEB system shall command full braking.",
+    "keyword": "AS WELL AS",
+    "malfunction": "If TTC < 0,5 sec, the AEB system shall command full braking AS WELL AS activate the hazard lights."
+  },
+  {
+    "function": "If TTC < 0,5 sec, AEB system shall command full braking.",
+    "keyword": "PART OF",
+    "malfunction": "Only part of the function occurs: when TTC < 0,5 s, the AEB system applies partial braking rather than delivering full braking."
+  }
+]
