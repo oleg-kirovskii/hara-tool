@@ -1,0 +1,3 @@
+[console_scripts]
+hazop = hara_tool.hazop:main
+
