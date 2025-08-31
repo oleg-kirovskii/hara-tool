@@ -20,3 +20,8 @@ This is an attempt to create a tool for automated Hazard Analysis and Risk Asses
   * *C* -- controllability
   * *ASIL* -- automotive safety integrity level
 * Formulation of a safety goal.
+
+## Scripts
+### ```hazop.py```
+Usage: python hazop.py <functions_file> <keywords_file>
+Returns malfunctions

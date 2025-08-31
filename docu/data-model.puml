@@ -1,0 +1,76 @@
+@startuml
+
+class "Safety Goal" as SG {
+    + Formulation: String
+    + ASIL: e_ASIL
+}
+
+enum e_ASIL {
+    ASIL A
+    ASIL B
+    ASIL C
+    ASIL D
+}
+
+class "Hazardous Event" as HE {
+    + Description: String
+    + Severity: e_Severity
+    + Exposure: e_Exposure
+    + Controllability: e_Controllability
+}
+
+enum e_Severity {
+    S0
+    S1
+    S2
+    S3
+    S4
+}
+
+enum e_Exposure {
+    E0
+    E1
+    E2
+    E3
+    E4
+}
+
+enum e_Controllability {
+    C0
+    C1
+    C2
+    C3
+}
+
+class "Road Situation" as RS {
+    + Description: String
+    + Exposure: e_Exposure
+}
+
+class "Malfunction" as M {
+    + Description: String
+    + Keyword: e_Keyword
+}
+
+enum e_Keyword {
+    NOT 
+    MORE
+    LESS
+    NOT
+    AS WELL AS
+    PART OF
+}
+
+class "Function" as F {
+    + Description: String
+}
+
+SG "1" -- "1..*" HE
+
+HE "1" -- "1" RS
+
+HE "1" -- "1" M
+
+M "1" -- "1" F
+
+@enduml

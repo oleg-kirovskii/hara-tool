@@ -1,0 +1,4 @@
+AEB System shall measure distance to the obstacle in the direction of the movement of the vehicle.
+AEB System shall receive speed of the car.
+AEB System shall calculate Time To Collision (TTC) based on the distance to an obstacle and the speed.
+If TTC < 0,5 sec, AEB system shall command full braking.
